@@ -91,7 +91,7 @@ let targetSelector = 'a[href^="https://kan-ban.org"]';
 (async (width, height, searchTerm, targetSelector) => {
   // Launch the browser in headless mode and set up a page.
   const browser = await puppeteer.launch({
-    args: [`--no-sandbox --window-size=${width},${height}`],
+    args: [`--no-sandbox`,`--window-size=${width},${height}`],
     headless: false,
     defaultViewport: {
         width:width,

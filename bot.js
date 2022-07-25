@@ -11,9 +11,9 @@ const agents = [
 ];
 
 const searchTerms = [
-  "kanban and sequence diagram",
-  "kanban sequence diagram",
-  "sequence diagram kanban"
+  "kanban+and+sequence+diagram",
+  "kanban+sequence+diagram",
+  "sequence+diagram+kanban"
 ];
 /*
 const searchTerms = [

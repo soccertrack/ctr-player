@@ -1,5 +1,9 @@
 name: CI
-on: push
+on:
+  schedule:
+    - cron: '31 12 * * *'
+    - cron: '12 17 * * *'
+    
 jobs:
   installDependencies:
     name: Install Dependencies

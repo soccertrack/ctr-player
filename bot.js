@@ -11,19 +11,13 @@ const agents = [
 ];
 
 const searchTerms = [
-  "kanban+and+sequence+diagram",
-  "kanban+sequence+diagram",
-  "sequence+diagram+kanban"
-];
-/*
-const searchTerms = [
   "how+to+prevent+food+spoilage",
   "prevent+spoiled+food",
   "stop+food+spoilage",
   "keep+food+from+spoilage",
   "stop+spoil+food"
 ];
-*/
+
 const minWait = 2500;
 const maxWait = 5000;
 
@@ -85,8 +79,8 @@ const preparePagEnvironment = async (page) => {
 let width = meanWidth + getRandomInt(200);
 let height = meanHeight + getRandomInt(200);
 let searchTerm = searchTerms[getRandomInt(searchTerms.length)];
-//let targetSelector = 'a[href^="https://defiel.com/"]';
-let targetSelector = 'a[href^="https://kan-ban.org"]';
+let targetSelector = 'a[href^="https://defiel.com/"]';
+//let targetSelector = 'a[href^="https://kan-ban.org"]';
 
 (async (width, height, searchTerm, targetSelector) => {
   // Launch the browser in headless mode and set up a page.
@@ -105,8 +99,8 @@ let targetSelector = 'a[href^="https://kan-ban.org"]';
   // Prepare for the tests (not yet implemented).
   await preparePagEnvironment(page);
 
- // const searchUrl = `https://www.google.com/search?q=${searchTerm}&oq=${searchTerm}&sourceid=chrome&ie=UTF-8`
-  const searchUrl = "https://kan-ban.org/";
+  const searchUrl = `https://www.google.com/search?q=${searchTerm}&oq=${searchTerm}&sourceid=chrome&ie=UTF-8`
+  //const searchUrl = "https://kan-ban.org/";
   console.log(`nav to ${searchUrl}`);
   await page.goto(searchUrl);
 

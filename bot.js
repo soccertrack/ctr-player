@@ -105,7 +105,8 @@ let targetSelector = 'a[href^="https://kan-ban.org"]';
   // Prepare for the tests (not yet implemented).
   await preparePagEnvironment(page);
 
-  const searchUrl = `https://www.google.com/search?q=${searchTerm}&oq=${searchTerm}&sourceid=chrome&ie=UTF-8`
+ // const searchUrl = `https://www.google.com/search?q=${searchTerm}&oq=${searchTerm}&sourceid=chrome&ie=UTF-8`
+  const searchUrl = 'https://kan-ban.org/";
   console.log(`nav to ${searchUrl}`);
   await page.goto(searchUrl);
 

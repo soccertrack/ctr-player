@@ -106,7 +106,7 @@ let targetSelector = 'a[href^="https://kan-ban.org"]';
   await preparePagEnvironment(page);
 
   const searchUrl = `https://www.google.com/search?q=${searchTerm}&oq=${searchTerm}&sourceid=chrome&ie=UTF-8`
-  
+  console.log(`nav to ${searchUrl}`);
   await page.goto(searchUrl);
 
   for (pageNumber=1; pageNumber<=maxPageToTurn; pageNumber++) {
